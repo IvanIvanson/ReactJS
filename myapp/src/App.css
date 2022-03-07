@@ -19,7 +19,7 @@
  }
 .Btn-message {
   display: block;
-  margin: 50px  auto;
+  margin: 0px  auto;
   padding: 5px 20px 5px 20px;
   font-size: 20px;
   cursor: pointer;
@@ -43,4 +43,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+h1{
+  color: rgb(236, 43, 178)
+}
+h2{
+  text-align: center;
+  color: white
+}
+.botAnswer{
+  color:#61fb7b;
+}
+.btnBot{
+  display: block;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+#btn1{
+  margin-left:50px;
+}
+.counter{
+  color: white;
+  font-size: 30px;
 }
