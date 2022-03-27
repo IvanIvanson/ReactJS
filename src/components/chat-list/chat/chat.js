@@ -4,15 +4,15 @@ import { makeStyles } from "@mui/styles";
 import st from "./chat.module.css";
 
 const useStyles = makeStyles((ctx) => {
-  // console.log("ctx", ctx);
+  
 
   return {
     item: {
       "&.Mui-selected": {
-        backgroundColor: "#2b5278",
+        backgroundColor: "#4b5278",
       },
       "&.Mui-selected:hover": {
-        backgroundColor: "#2b5278",
+        backgroundColor: "#4b5278",
       },
     },
   };

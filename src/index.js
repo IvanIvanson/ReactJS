@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { MessageList, Layout, ChatList, Header } from "./components";
-
 import "./global.css";
 
 const App = () => {
