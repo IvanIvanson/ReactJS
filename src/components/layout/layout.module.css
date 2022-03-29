@@ -8,8 +8,8 @@
 
 .header {
   flex: none;
-  background-color: #17212b;
-  border-bottom: 1px solid #000;
+  background-color: #4e5257;
+  border-bottom: 1px solid rgb(32, 28, 28);
   padding: 10px 0;
 }
 
