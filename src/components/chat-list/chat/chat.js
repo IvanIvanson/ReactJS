@@ -4,29 +4,24 @@ import { makeStyles } from "@mui/styles";
 import st from "./chat.module.css";
 
 const useStyles = makeStyles((ctx) => {
-  
-
+ 
   return {
     item: {
       "&.Mui-selected": {
-        backgroundColor: "#4b5278",
+        backgroundColor: "#2b5278",
       },
       "&.Mui-selected:hover": {
-        backgroundColor: "#4b5278",
+        backgroundColor: "#2b5278",
       },
     },
   };
 });
 
-export function Chat({ title, selected, handleListItemClick }) {
+export function Chat({ title, selected }) {
   const styles = useStyles();
 
   return (
-    <ListItemButton
-      onClick={handleListItemClick}
-      className={styles.item}
-      selected={selected}
-    >
+    <ListItemButton className={styles.item} selected={selected}>
       <ListItem>
         <AccountCircle fontSize="large" className={st.icon} />
       </ListItem>
