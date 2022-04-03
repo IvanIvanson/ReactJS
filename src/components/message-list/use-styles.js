@@ -1,11 +1,10 @@
 import { makeStyles } from "@mui/styles";
 
 // jss
-
-export const useStyles = makeStyles(() => {
+export const useStyles = makeStyles((ctx) => {
   return {
     input: {
-      color: "#7a9fa1",
+      color: "#9a9fa1",
       padding: "10px 15px",
       fontSize: "15px",
     },
