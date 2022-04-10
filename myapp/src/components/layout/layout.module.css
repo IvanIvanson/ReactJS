@@ -10,12 +10,14 @@
 }
 .body {
     background: gray;
+    position: relative;
     width: 100%;
     /* @TODO исправить высоту */
     /* height: calc(100% - 69px); */
-    height: 100%;
     display: flex;
+    /* flex-grow: 1; */
     flex-direction: column;
+    height: 100%;
   }
   
   .header {
@@ -54,7 +56,8 @@
   }
   
   .messages > div:nth-child(2) {
-    height: 50px;
+    padding: 10px;
+    margin-bottom: 60px;
     flex: none;
-    background-color: #17212b;
+    background-color: #382458;
   }
