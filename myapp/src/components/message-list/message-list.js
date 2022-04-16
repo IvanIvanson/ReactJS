@@ -3,10 +3,10 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch, shallowEqual } from "react-redux";
 import { Input, InputAdornment } from "@mui/material";
 // import PropTypes from "prop-types";
-// import { Send } from "@mui/icons-material";
+import { Send } from "@mui/icons-material";
 import { Message } from "./message";
 import { useStyles } from "./use-styles";
-import { sendMessageWithBot, messagesSelector } from "../../store/messages";
+import { messagesSelector, createMessageFb } from "../../store/messages";
 import { usePrevios } from "../../hooks/use-previos";
 
 export const MessageList = () => {
@@ -33,9 +33,7 @@ export const MessageList = () => {
   const send = useCallback(
     (message, author = "User") => {
       if (message) {
-        dispatch(
-          sendMessageWithBot(roomId, { author: author || "Bot", message })
-        );
+        dispatch(createMessageFb(roomId, { author: author || "Bot", message }));
 
         setValue("");
       }
@@ -84,9 +82,9 @@ export const MessageList = () => {
         fullWidth
         endAdornment={
           <InputAdornment position="end">
-            {/* {value && (
+            {value && (
               <Send className={styles.icon} onClick={() => send(value)} />
-            )} */}
+            )}
           </InputAdornment>
         }
       />
